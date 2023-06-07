@@ -1,5 +1,6 @@
 ```mermaid
 sequenceDiagram
+    #exercice 0.4
     participant browser
     participant server
 
@@ -11,7 +12,7 @@ sequenceDiagram
     server-->>browser: status code 302
     deactivate server
 
-    Note right of browser: The server sends a 302 response to the browser which is a URL redirect
+    Note right of browser: The server sends a 302 response to the browser which causes a URL redirect
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
